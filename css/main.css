@@ -157,7 +157,7 @@ body {
 	margin: 0 5px;
 }
 .top-menu__link {
-	color: #fff;
+	color: rgb(0, 0, 0);
 	font-size: 14px;
 	font-weight: 500;
 	text-decoration: none;
