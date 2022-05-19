@@ -46,7 +46,7 @@
 		text-align: left;
 		padding: 14px 35px;
 		border-bottom: 1px solid rgba(255,255,255, .05);
-		color: rgba(255,255,255, .5);
+		color: rgb(0, 0, 0);
 		border-radius: 0;
 		line-height: 1.5;
 		font-size: 12px;
@@ -55,8 +55,8 @@
 	.top-menu__link:hover,
 	.top-menu__link:focus,
 	span.top-menu__link {
-		color: rgba(255,255,255, .75);
-		background-color: rgba(196, 196, 196, 0.075);
+		color: rgba(0, 0, 0, 0.408);
+		background-color: rgba(157, 157, 157, 0.303);
 	}
 	.menu-toggle {
 		display: block;
