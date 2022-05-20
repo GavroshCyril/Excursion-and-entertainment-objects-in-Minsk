@@ -2,7 +2,12 @@
 
 /* xl <= Extra extra large (xxl) */
 @media (max-width : 1400px) {
-
+	.top-menu__item {
+		margin: 0;
+	}
+	.top-menu__link {
+		padding: 6px 10px;
+	}
 }
 
 /* lg <= Extra large (xl) */
@@ -12,7 +17,7 @@
 		margin: 0;
 	}
 	.top-menu__link {
-		padding: 7.5px 15px;
+		padding: 6px 10px;
 	}
 
 	.home-callback__list > * {
