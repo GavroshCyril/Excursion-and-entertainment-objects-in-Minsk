@@ -683,6 +683,19 @@ form input, form textarea {
 	display: inline-block;
 	width: 15px;
 	height: 18px;
+	background-image: url(../images/interface/mapmarker.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 8px;
+	position: relative;
+	top: 1.4px;
+}
+
+.data-line::before {
+	content: '';
+	display: inline-block;
+	width: 15px;
+	height: 18px;
 	background-image: url(../images/interface/data.svg);
 	background-repeat: no-repeat;
 	background-position: center;
