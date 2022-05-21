@@ -509,10 +509,27 @@ form input, form textarea {
 .best-works__right {
 	padding-left: 40px;
 }
+
+.news__bottom{
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .best-works__bottom {
 	margin-top: -130px;
 	padding-bottom: 65px;
 }
+.news__item-wrapper{
+	padding-bottom: 30px;
+	overflow: hidden;
+	margin-bottom: var(--gutter);
+	width: 218px;
+    height: 354px;
+	padding-right: 50px;
+}
+
 .best-works__item-wrapper {
 	overflow: hidden;
 	margin-bottom: var(--gutter);
@@ -579,6 +596,16 @@ form input, form textarea {
 	padding: 25px;
 	color: var(--text);
 }
+
+.news-item__desc{
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.28;
+	position: relative;
+	padding-left: 5px;
+	margin-top: 5px;
+}
+
 .best-item__desc {
 	font-size: 20px;
 	font-weight: 700;
@@ -646,7 +673,7 @@ form input, form textarea {
 .address-line {
 	color: var(--address);
 	font-size: var(--small-text);
-	font-weight: 700;
+	font-weight: 400;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -654,9 +681,9 @@ form input, form textarea {
 .address-line::before {
 	content: '';
 	display: inline-block;
-	width: 12px;
-	height: 15px;
-	background-image: url(../images/interface/mapmarker.svg);
+	width: 15px;
+	height: 18px;
+	background-image: url(../images/interface/data.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	margin-right: 8px;
@@ -667,7 +694,7 @@ form input, form textarea {
 /* ADVANTAGES */
 
 .advantages {
-	padding: 80px 0 50px;
+	padding: 80px 0 0px;
 }
 .advantages__item-wrapper {
 	margin-bottom: var(--gutter);
