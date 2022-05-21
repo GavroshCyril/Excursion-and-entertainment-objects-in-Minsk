@@ -7,3 +7,13 @@ document.getElementById('click-to-hide').addEventListener("click", hiddenClosecl
     } else {
    x.style.display = "none"}
   };
+
+
+  document.querySelector('#button').onclick = function() {
+    if(this.innerHTML == "Скрыть")
+  {
+    this.innerHTML = "Больше объектов";
+    return;
+  }
+  else this.innerHTML = "Скрыть";
+  }
