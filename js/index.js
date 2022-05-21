@@ -10,10 +10,10 @@ document.getElementById('click-to-hide').addEventListener("click", hiddenClosecl
 
 
   document.querySelector('#button').onclick = function() {
-    if(this.innerHTML == "Скрыть")
+    if(this.innerHTML == "Скрыть объекты")
   {
     this.innerHTML = "Больше объектов";
     return;
   }
-  else this.innerHTML = "Скрыть";
+  else this.innerHTML = "Скрыть объекты";
   }
