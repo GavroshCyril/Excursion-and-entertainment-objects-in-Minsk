@@ -560,7 +560,7 @@ form input, form textarea {
 .section-title__paragraph {
 	font-size: var(--small-text);
 	margin: 0;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .section-title--dotted .section-title__desc {
 	margin-bottom: 25px;
@@ -573,6 +573,24 @@ form input, form textarea {
 	background-image: url(../images/interface/ellipse-accent.svg);
 	background-repeat: repeat-x;
 	margin-top: 28px;
+}
+
+.section-link{
+	font-weight: 500;
+	font-size: 18px;
+	color: #454545;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.section-link:hover{
+	color: #212020;
+}
+.section__icon{
+	padding-left: 5px;
 }
 
 /* BEST ITEM */
@@ -604,6 +622,11 @@ form input, form textarea {
 	position: relative;
 	padding-left: 5px;
 	margin-top: 5px;
+}
+
+.news-title{
+	text-align: center;
+	margin-bottom: 40px;
 }
 
 .best-item__desc {
