@@ -540,6 +540,9 @@ form input, form textarea {
 }
 
 /* SECTION TITLE */
+.section-title{
+	margin-bottom: 10px;
+}
 
 .section-title__name {
 	color: var(--accent);
@@ -573,6 +576,24 @@ form input, form textarea {
 	background-image: url(../images/interface/ellipse-accent.svg);
 	background-repeat: repeat-x;
 	margin-top: 28px;
+}
+
+.section-visit:hover{
+	border: 1px solid black;
+	background: inherit;
+	color: #1a1b1c;
+}
+
+.section-visit{
+	background-color: #171A1A;
+	color: #E4E6E8;
+	padding: 10px;
+	text-decoration: none;
+	transition: 0.3s ease-in-out;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-ms-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
 }
 
 .section-link{
