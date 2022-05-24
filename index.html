@@ -23,12 +23,23 @@
 </head>
 
 <body>
-	
+	<header class="header">
 	<div class="navbar">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-3 col-6 user">
-					<a href="/pages/authorization.html"><img title="Личный аккаунт" src="/images/interface/person.svg" alt="User Avatar"></a>
+				<ul class="navbar-users">
+					<li>
+						<a href="/pages/authorization.html">
+							<img title="Личный аккаунт" src="/images/interface/person.svg" alt="User Avatar">
+						</a>
+					</li>
+					<ul class="navbar-user">
+						<li><a href="#">Админ панель</a></li>
+						<li><a href="#">Выход</a></li>
+					</ul>
+				</ul>
+					
 				</div>
 
 				<div class="col-md-9 col-lg-6 col-6 menu-container">
@@ -59,6 +70,9 @@
 		</div>
 	</div>
 
+	<a href="#musems"><img class="arrow" src="/images/interface/arrow.svg" alt=""></a>	
+</header>
+
 	<div class="home-slider">
 		<div class="swiper-wrapper">
 
@@ -78,6 +92,7 @@
 		</div>
 
 		<div class="best-works__bottom">
+			<a name="musems"></a>
 			<div class="container">
 				<div class="row">
 
