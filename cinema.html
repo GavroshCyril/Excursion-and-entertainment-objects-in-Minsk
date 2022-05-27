@@ -94,10 +94,9 @@
 	<section class="best-works">
 		<div class="filtration">
 			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
-			<button class="btn lang" key="Partizansky district" onclick="filterSelection('partizanskiy')">Партизанский р-н</button>
-			<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
-			<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
-			<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
+			<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+			<button class="btn lang"  key="Sovetski district"  onclick="filterSelection('sovetski')">Советский р-н</button>
+			<button class="btn lang"  key="Pervomaiski district"  onclick="filterSelection('pervomaiski')">Первомайский р-н</button>
 		</div>
 
 		<div class="best-works__bottom">
@@ -105,7 +104,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Cinema/Belarus/Belarus-01.jpg" alt="Кинотеатр Беларусь">
@@ -117,7 +116,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv sovetski">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Cinema/Mir/Mir-01.jpg" alt="Кинотеатр Мир">
@@ -129,7 +128,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Cinema/moskwa/moskwa-01.jpg" alt="Кинотеатр Москва">
@@ -141,7 +140,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Cinema/Pobeda/Pobeda-01.jpg" alt="Кинотеатр Победа">
@@ -153,7 +152,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv pervomaiski">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Cinema/Dom-kino/Dom-kino-01.jpg" alt="Дом кино">
@@ -188,7 +187,7 @@
 	<script src="libs/micromodal/micromodal.min.js"></script>
 	<script src="/js/index.js"></script>
 	<script src="js/common.js"></script>
-
+	<script src="/js/filter.js"></script>
 </body>
 
 </html>

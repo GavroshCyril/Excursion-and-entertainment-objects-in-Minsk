@@ -94,9 +94,8 @@
 	<section class="best-works">
 		<div class="filtration">
 			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
-				<button class="btn lang" key="Partizansky district" onclick="filterSelection('partizanskiy')">Партизанский р-н</button>
-				<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
-				<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+				<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+				<button class="btn lang" key="Pervomaiski district" onclick="filterSelection('pervomaiski')">Первомайский р-н</button>
 				<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
 		</div>
 
@@ -105,7 +104,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Centers/Titan/titan-01.jpg" alt="ТРЦ Титан">
@@ -117,7 +116,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv pervomaiski">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Centers/DanaMall/dana-mall-01.jpg" alt="Dana Mall">
@@ -129,7 +128,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Centers/Gallery/Gallery-01.jpeg" alt="ТЦ Галлерея">
@@ -164,7 +163,7 @@
 	<script src="libs/micromodal/micromodal.min.js"></script>
 	<script src="/js/index.js"></script>
 	<script src="js/common.js"></script>
-
+	<script src="/js/filter.js"></script>
 </body>
 
 </html>

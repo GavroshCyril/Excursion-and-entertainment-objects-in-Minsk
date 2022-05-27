@@ -92,12 +92,12 @@
 
 	<section class="best-works">
 		<div class="filtration">
-			<button class="btn active" onclick="filterSelection('all')">Показать все</button>
 			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
+			<button class="btn lang" key="Pervomaiski district" onclick="filterSelection('pervomaiski')">Первомайский р-н</button>
 			<button class="btn lang" key="Partizansky district" onclick="filterSelection('partizanskiy')">Партизанский р-н</button>
-			<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
-			<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
-			<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
+			<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+			<button class="btn lang"  key="Sovetski district"  onclick="filterSelection('sovetski')">Советский р-н</button>
+			<button class="btn lang"  key="Leninsky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
 		</div>
 
 		<div class="best-works__bottom">
@@ -105,7 +105,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv pervomaiski">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Parks/Chelyuskintsev_Park/chelyuskintsev-01.jpg" alt="Парк Челюскинцев">
@@ -117,7 +117,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv partizanskiy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Parks/Gorkova/gorkova-02.jpg" alt="Центральный детский парк имени Максима Горького">
@@ -129,7 +129,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Parks/Pobeda/pobeda-01.jpg" alt="Парк Победы">
@@ -141,7 +141,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Parks/Kupala/kupala-01.jpg" alt="Парк имени Янки Купалы">
@@ -153,7 +153,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv sovetski">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Parks/Druzhba/druzhba-01.jpg" alt="Парк Дружбы Народов">
@@ -165,7 +165,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Parks/Loshickiy/loshickiy-02.jpg" alt="Лошицкий парк">
@@ -212,6 +212,7 @@
 	<script src="libs/micromodal/micromodal.min.js"></script>
 	<script src="/js/index.js"></script>
 	<script src="js/common.js"></script>
+	<script src="/js/filter.js"></script>
 
 </body>
 
