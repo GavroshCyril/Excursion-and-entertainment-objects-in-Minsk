@@ -93,9 +93,8 @@
 	<section class="best-works">
 		<div class="filtration">
 			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
-				<button class="btn lang" key="Partizansky district" onclick="filterSelection('partizanskiy')">Партизанский р-н</button>
-				<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
-				<button class="btn lang"  key="Partizansky district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
+				<button class="btn lang"  key="Leninsky district"  onclick="filterSelection('leninskiy')">Ленинский р-н</button>
+				<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
 				<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
 		</div>
 
@@ -104,7 +103,7 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski">
 						<a href="/pages/theaters/gorkova-theater.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Theaters/Gorkova/Gorkova-01.jpg" alt="Национальный академический драматический театр им. М. Горького">
@@ -116,7 +115,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="/pages/theaters/baletandopera.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Theaters/Opera-Balet/opera-balet-01.pic" alt="Национальный Академический Большой Театр Оперы и Балета">
@@ -128,7 +127,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski" >
 						<a href="/pages/theaters/musicthatheater.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Theaters/Music-theaters/Music-theaters-06.jpg" alt="Белорусский государственный академический музыкальный театр">
@@ -140,7 +139,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Theaters/Yanka-kupala/Yanka-kupala-01.jpg" alt="Национальный академический театр имени Янки Купалы">
@@ -152,7 +151,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Theaters/Yunogo-zritelya/Yunogo-zritelya-02.jpg" alt="Белорусский государственный академический театр юного зрителя">
@@ -164,7 +163,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Theaters/Dramaturgia/Dramaturgia-01.jpg" alt="Республиканский театр белорусской драматургии">
@@ -176,7 +175,7 @@
 						</a>
 					</div>
 
-					<div id="hidden-element" class="col-md-4 best-works__item-wrapper">
+					<div id="hidden-element" class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Theaters/Lyalek/Lyalek-01.jpg" alt="Белорусский государственный театр кукол">
@@ -211,6 +210,7 @@
 	<script src="libs/micromodal/micromodal.min.js"></script>
 	<script src="/js/index.js"></script>
 	<script src="js/common.js"></script>
+	<script src="/js/filter.js"></script>
 
 </body>
 
