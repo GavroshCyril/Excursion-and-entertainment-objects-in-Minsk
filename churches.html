@@ -6,8 +6,8 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title class="lang" key="shopping">Торгово-развлекательные центры</title>
-	<meta name="description" content="Торгово-развлекательные центры города Минска">
+	<title class="lang" key="churches">Костелы и церкви</title>
+	<meta name="description" content="Костелы и церкви города Минска">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="icon" href="/images/favicon.png">
 	<!-- <meta property="og:image" content="images/preview.jpg"> -->
@@ -23,7 +23,6 @@
 </head>
 
 <body>
-	
 	<header class="header">
 		<div class="navbar">
 			<div class="container">
@@ -45,8 +44,8 @@
 						<li class="top-menu__item"><a href="/theaters.html" class="top-menu__link lang" key="theaters">Театры</a></li>
 						<li class="top-menu__item"><a href="/cinema.html" class="top-menu__link lang" key="cinemas">Кинотеатры</a></li>
 						<li class="top-menu__item"><a href="/parks.html" class="top-menu__link lang" key="parks">Парки и скверы</a></li>
-						<li class="top-menu__item"><a href="/churches.html" class="top-menu__link lang" key="churches">Костелы и церкви</a></li>
-						<li class="top-menu__item"><span class="top-menu__link lang" key="shopping">Торгово-развлекательные центры</span></li>
+						<li class="top-menu__item"><span class="top-menu__link lang" key="churches">Костелы и церкви</span></li>
+						<li class="top-menu__item"><a href="/centers.html" class="top-menu__link lang" key="shopping">Торгово-развлекательные центры</a></li>
 						<li class="top-menu__item"><a href="/others.html" class="top-menu__link lang" key="other objects">Другие объекты</a></li>
 					</ul>
 				</div>
@@ -74,15 +73,15 @@
 		</div>
 	</div>
 
-	<a href="#centers"><img class="arrow " src="/images/interface/arrow.svg" alt=""></a>	
+	<a href="#others"><img class="arrow " src="/images/interface/arrow.svg" alt=""></a>	
 </header>
 
 	<div class="home-slider">
 		<div class="swiper-wrapper">
 
-			<div class="swiper-slide home-slider__slide" style="background-image: url(images/Centers/cetners-main.jpeg);">
+			<div class="swiper-slide home-slider__slide" style="background-image: url(images/Churches/Nevskogo/Nevskogo-02.jpg);">
 				<div class="container">
-					<h2 data-animate="bottom" class="home-slider__heading lang" key="centersMinsk">Торгово-развлекательные центры г.Минска</h2>
+					<h2 data-animate="bottom" class="home-slider__heading lang" key="churches">Костелы и церкви г. Минска</h2>
 				</div>
 			</div>
 
@@ -94,57 +93,31 @@
 	<section class="best-works">
 		<div class="filtration">
 			<button class="btn active lang"  key="Show all"  onclick="filterSelection('all')">Показать все</button>
-				<button class="btn lang"  key="Central district"  onclick="filterSelection('centralniy')">Центральный р-н</button>
-				<button class="btn lang" key="Pervomaiski district" onclick="filterSelection('pervomaiski')">Первомайский р-н</button>
-				<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
+			<button class="btn lang"  key="Moskovsky district"  onclick="filterSelection('moscovski')">Московский р-н</button>
 		</div>
 
 		<div class="best-works__bottom">
-			<a name="centers"></a>
+			<a name="others"></a>
 			<div class="container">
 				<div class="row">
 
 					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski">
 						<a href="#" class="best-item">
 							<div class="best-item__img-wrapper">
-								<img src="images/Centers/Titan/titan-01.jpg" alt="ТРЦ Титан">
+								<img src="images/Churches/Simon/simon-03.jpg" alt="Костёл Святого Симеона и Святой Елены">
 							</div>
 							<div class="best-item__content">
-								<div class="address-line lang" title="просп. Дзержинского, 104, корп. 2" key="prospect84">просп. Независимости, 84/1</div>
-								<div class="best-item__desc lang" key="titan">ТРЦ "Титан"</div>
+								<div class="address-line lang" title="ул. Советская, 15" key="sovetskaya15">ул. Советская, 15</div>
+								<div class="best-item__desc lang" key="simeon">Костёл Святого Симеона и Святой Елены</div>
 							</div>
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper filterDiv pervomaiski">
-						<a href="#" class="best-item">
-							<div class="best-item__img-wrapper">
-								<img src="images/Centers/DanaMall/dana-mall-01.jpg" alt="Dana Mall">
-							</div>
-							<div class="best-item__content">
-								<div class="address-line lang" title="ул. Петра Мстиславца, 11" key="petra">ул. Петра Мстиславца, 11</div>
-								<div class="best-item__desc lang" key="dana">ТЦ "Dana Mall"</div>
-							</div>
-						</a>
-					</div>
-
-					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
-						<a href="#" class="best-item">
-							<div class="best-item__img-wrapper">
-								<img src="images/Centers/Gallery/Gallery-01.jpeg" alt="ТЦ Галлерея">
-							</div>
-							<div class="best-item__content">
-								<div class="address-line lang" title="просп. Победителей, 9" key="prospect9">просп. Победителей, 9</div>
-								<div class="best-item__desc lang" key="gallery">ТЦ "Галлерея"</div>
-							</div>
-						</a>
-					</div>
-					
 				</div>
 				
 			</div>
-
-		<!-- 	<div id="click-to-hide" class="best-works__button-wrapper">
+<!-- 
+			<div id="click-to-hide" class="best-works__button-wrapper">
 				<button id="button" class="button button__text lang" key="more objects" >
 					Больше объектов
 				</button>
@@ -164,6 +137,7 @@
 	<script src="/js/index.js"></script>
 	<script src="js/common.js"></script>
 	<script src="/js/filter.js"></script>
+
 </body>
 
 </html>
