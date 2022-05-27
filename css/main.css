@@ -559,14 +559,64 @@ form input, form textarea {
 
 /* BEST WORKS */
 
+
+
 .best-works {
 	background-color: var(--light-bg);
 }
-.best-works__top {
+
+.filtration {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: var(--dark);
 	color: #fff;
 	padding-bottom: 170px;
 }
+
+/* Фильтрация */
+
+button {
+	padding: 5px 15px;
+	border: 0;
+	margin: 20px 5px;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 500;
+	color: #000000;
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+	transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+}
+
+  button:hover{
+	background-color: #947c3a30;
+  }
+  
+  .best-works__bottom{
+	  overflow: hidden;
+  }
+
+  .filterDiv{
+	  display: none;
+  }
+  .show {
+	display: block;
+  }
+  .btn.active {
+	background-color: var(--accent-light);
+	color: white;
+  }
+
+  
+
 .best-works__top-wrapper {
 	display: flex;
 	align-items: center;
@@ -983,4 +1033,5 @@ form input, form textarea {
 	color: #5c5b5b;
 	margin-left: 10px;
 }
+
 

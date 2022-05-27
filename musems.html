@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="/css/media.css">
 
 	<script src="https://kit.fontawesome.com/b8991598b2.js"></script>
+<p>
 </head>
 
 <body>
@@ -91,7 +92,12 @@
 
 
 	<section class="best-works">
-		<div class="best-works__top">
+		<div class="filtration">
+			<button class="btn active" onclick="filterSelection('all')">Показать все</button>
+				<button class="btn " onclick="filterSelection('partizanskiy')">Партизанский р-н</button>
+				<button class="btn" onclick="filterSelection('leninskiy')">Ленинский р-н</button>
+				<button class="btn" onclick="filterSelection('centralniy')">Центральный р-н</button>
+				<button class="btn" onclick="filterSelection('moscovski')">Московский р-н</button>
 		</div>
 
 		<div class="best-works__bottom">
@@ -99,31 +105,31 @@
 			<div class="container">
 				<div class="row">
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper  filterDiv leninskiy ">
 						<a href="/pages/musems/art-musem.html" class="best-item">
-							<div class="best-item__img-wrapper">
+							<div class="best-item__img-wrapper ">
 								<img src="images/portfolio/art-02.jpg" alt="Национальный художественный музей Республики Беларусь">
 							</div>
-							<div class="best-item__content">
+							<div class="best-item__content ">
 								<div class="address-line lang" title="ул. Ленина, 20" key="lenina20">ул. Ленина, 20</div>
 								<div class="best-item__desc lang" key="Art">Национальный художественный музей Республики Беларусь</div>
 							</div>
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv partizanskiy ">
 						<a href="/pages/musems/asgura-musem.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Musems/Asgura/azgura-10.jpg" alt="Мемориальный музей-мастерская З.И. Азгура">
 							</div>
-							<div class="best-item__content">
+							<div class="best-item__content ">
 								<div class="address-line lang" title="ул. Азгура, 8" key="azgura8">ул. Азгура, 8</div>
 								<div class="best-item__desc lang" key="azgura">Мемориальный музей-мастерская З.И. Азгура</div>
 							</div>
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="/pages/musems/war-musem.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Musems/Patriotic-War/Patriotic-War-02.jpg" alt="Белорусский государственный музей истории Великой Отечественной войны">
@@ -135,19 +141,19 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv moscovski">
 						<a href="/pages/musems/belaruscinema-musem.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img src="images/Musems/Belarusian-cinema/Belarusian-cinema-06.jpg" alt="Музей истории белорусского кино">
 							</div>
-							<div class="best-item__content">
+							<div class="best-item__content frunzenskiy">
 								<div class="address-line lang" title="ул. Свердлова, 4" key="sverdlova4">ул. Свердлова, 4</div>
 								<div class="best-item__desc lang" key="kino">Музей истории белорусского кино</div>
 							</div>
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv leninskiy">
 						<a href="/pages/musems/hisrotical.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Musems/Historical/historical-01.jfif" alt="Национальный исторический музей Республики Беларусь">
@@ -159,7 +165,7 @@
 						</a>
 					</div>
 
-					<div class="col-md-4 best-works__item-wrapper">
+					<div class="col-md-4 best-works__item-wrapper filterDiv ">
 						<a href="/pages/musems/aviation-musem.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Musems/Aviation-technology/aviation-technology-04.jpg" alt="Музей авиационной техники">
@@ -172,7 +178,7 @@
 					</div>
 
 
-					<div id="hidden-element" class="col-md-4 best-works__item-wrapper ">
+					<div id="hidden-element" class="col-md-4 best-works__item-wrapper filterDiv centralniy">
 						<a href="/pages/musems/yankakupala-musem.html" class="best-item">
 							<div class="best-item__img-wrapper">
 								<img  src="images/Musems/Yanky-kupala/Yanky-kupala-01.jpg" alt="Государственный литературный музей Янки Купалы">
@@ -206,6 +212,7 @@
 	<script src="libs/swiper/swiper-bundle.min.js"></script>
 	<script src="libs/micromodal/micromodal.min.js"></script>
 	<script src="/js/index.js"></script>
+	<script src="/js/filter.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
