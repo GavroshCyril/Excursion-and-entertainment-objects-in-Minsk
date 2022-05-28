@@ -1,4 +1,8 @@
 /* USER VARIABLES SECTION */
+*{
+	padding: 0;
+	margin: 0;
+}
 
 :root {
 	--accent: #443A1F;
@@ -1035,3 +1039,17 @@ button {
 }
 
 
+.shopping{
+	width: 200px;
+	height: 200px;
+}
+
+.center-info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-center{
+	margin-right: 20px;
+}
