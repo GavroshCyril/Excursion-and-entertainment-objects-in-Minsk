@@ -1050,6 +1050,48 @@ button {
 	align-items: center;
 }
 
-.button-center{
-	margin-right: 20px;
+.news-section{
+	background: var(--light-bg);
+}
+
+.main-title{
+	margin-top: 30px;
+}
+
+.info-centers{
+	padding: 50px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.info-wrap{
+	margin-top: 50px;
+}
+
+
+.home-callback__button{
+	margin: 0;
+}
+
+
+.info-card-title{
+	margin-bottom: 20px;
+	font-size: 48px;
+}
+
+.info-card-span{
+	margin-right: 10px;
+}
+
+.red{
+	border-bottom: 3px solid rgba(255, 0, 0, 0.499);
+}
+
+.green{
+	border-bottom: 3px solid rgba(0, 128, 0, 0.384);
+}
+
+.blue{
+	border-bottom: 3px solid rgba(0, 0, 255, 0.263);
 }
